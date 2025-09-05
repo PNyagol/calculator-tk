@@ -1,0 +1,44 @@
+          [ User ]
+            │
+            ▼
+   ┌─────────────────┐
+   │  Click Button   │  (e.g. "5", "+", "=")
+   └─────────────────┘
+            │
+            ▼
+   ┌─────────────────┐
+   │   UI (ui.py)    │
+   │ - Calculator()  │
+   │ - Handles input │
+   └─────────────────┘
+            │
+   ┌────────┼────────┐
+   │        │        │
+   ▼        ▼        ▼
+[Digits] [Operators] [Specials]
+ add_to   append_    square(), sqrt(),
+expression operator   evaluate(), clear()
+            │
+            ▼
+   ┌─────────────────┐
+   │ Logic (logic.py)│
+   │ - evaluate_expr │
+   │ - square        │
+   │ - sqrt          │
+   └─────────────────┘
+            │
+            ▼
+   ┌─────────────────┐
+   │   Result Value  │ (e.g. "25", "Error")
+   └─────────────────┘
+            │
+            ▼
+   ┌─────────────────┐
+   │ UI Updates      │
+   │ - total_label   │
+   │ - current_label │
+   └─────────────────┘
+            │
+            ▼
+       [ Displayed ]
+ (on calculator screen)
